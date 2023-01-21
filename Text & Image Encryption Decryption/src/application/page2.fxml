@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="730.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.function">
+   <children>
+      <ImageView fitHeight="538.0" fitWidth="730.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@w3.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="231.0" fitWidth="245.0" layoutX="469.0" layoutY="279.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@5.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="268.0" fitWidth="238.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@6.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="Image" graphicTextGap="6.0" layoutX="306.0" layoutY="101.0" mnemonicParsing="false" onAction="#Imagefired" prefHeight="65.0" prefWidth="238.0" style="-fx-background-radius: 30;" text="Image">
+         <font>
+            <Font name="Viner Hand ITC" size="24.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.24" height="29.55" radius="21.6625" width="59.1">
+               <input>
+                  <InnerShadow choke="0.61" height="73.52" radius="41.3275" width="93.79">
+                     <color>
+                        <Color red="0.14509804546833038" green="0.40392157435417175" blue="0.501960813999176" />
+                     </color>
+                  </InnerShadow>
+               </input>
+               <color>
+                  <Color red="0.47058823704719543" green="0.5607843399047852" blue="0.4941176474094391" />
+               </color>
+            </InnerShadow>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button graphicTextGap="6.0" layoutX="188.0" layoutY="369.0" mnemonicParsing="false" onAction="#Text" prefHeight="65.0" prefWidth="238.0" style="-fx-background-radius: 30;" text="Text">
+         <font>
+            <Font name="Viner Hand ITC" size="24.0" />
+         </font>
+         <effect>
+            <InnerShadow choke="0.81" height="42.62" radius="21.2675" width="44.45">
+               <color>
+                  <Color red="0.47058823704719543" green="0.5607843399047852" blue="0.4941176474094391" />
+               </color>
+               <input>
+                  <InnerShadow choke="0.57" height="23.94" radius="37.1175" width="126.53">
+                     <color>
+                        <Color red="0.14509804546833038" green="0.40392157435417175" blue="0.501960813999176" />
+                     </color>
+                  </InnerShadow>
+               </input>
+            </InnerShadow>
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

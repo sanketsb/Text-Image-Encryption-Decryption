@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.function">
+   <children>
+      <AnchorPane prefHeight="399.0" prefWidth="616.0">
+         <children>
+            <ImageView blendMode="MULTIPLY" fitHeight="691.0" fitWidth="1101.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@2.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="t2" alignment="CENTER" blendMode="DIFFERENCE" cache="true" layoutX="200.0" layoutY="39.0" prefHeight="66.0" prefWidth="241.0" promptText="Enter text" style="-fx-background-radius: 20;">
+               <font>
+                  <Font name="Times New Roman" size="22.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </TextField>
+            <TextArea fx:id="t3" layoutX="210.0" layoutY="264.0" prefHeight="115.0" prefWidth="231.0" style="-fx-background-radius: 60;" />
+            <TextField fx:id="t5" alignment="CENTER" blendMode="DIFFERENCE" cache="true" layoutX="211.0" layoutY="527.0" prefHeight="66.0" prefWidth="242.0" promptText="your output" style="-fx-background-radius: 20;">
+               <font>
+                  <Font name="Times New Roman" size="22.0" />
+               </font></TextField>
+            <Button blendMode="HARD_LIGHT" layoutX="676.0" layoutY="136.0" mnemonicParsing="false" onAction="#Encrypt" prefHeight="66.0" prefWidth="134.0" style="-fx-background-color: orange; -fx-background-radius: 30;" text="Encrypt">
+               <effect>
+                  <Reflection>
+                     <input>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </input>
+                  </Reflection>
+               </effect>
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font></Button>
+            <Button blendMode="HARD_LIGHT" layoutX="671.0" layoutY="399.0" mnemonicParsing="false" onAction="#Decrypt" prefHeight="66.0" prefWidth="143.0" style="-fx-background-radius: 30; -fx-background-color: orange;" text="Decrypt">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <effect>
+                  <Reflection>
+                     <input>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </input>
+                  </Reflection>
+               </effect></Button>
+            <TextField fx:id="t1" alignment="CENTER" blendMode="HARD_LIGHT" cache="true" layoutX="234.0" layoutY="136.0" prefHeight="33.0" prefWidth="178.0" promptText="Enter Password" style="-fx-background-radius: 20;">
+               <font>
+                  <Font name="Times New Roman Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+            <TextField fx:id="t4" alignment="CENTER" blendMode="HARD_LIGHT" cache="true" layoutX="246.0" layoutY="459.0" prefHeight="34.0" prefWidth="158.0" promptText="Enter same password" style="-fx-background-radius: 20;">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <font>
+                  <Font name="Times New Roman Bold" size="12.0" />
+               </font></TextField>
+            <Button layoutX="960.0" layoutY="20.0" mnemonicParsing="false" onAction="#Backk" text="Back">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="131.0" layoutY="-186.0" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
